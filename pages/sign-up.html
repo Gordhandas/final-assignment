@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./../css/signup.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCSX1gwP7slDkEOI0DFhgvKg-n8UwM5s3k",
+            authDomain: "final-assignment-b0710.firebaseapp.com",
+            databaseURL: "https://final-assignment-b0710-default-rtdb.firebaseio.com",
+            projectId: "final-assignment-b0710",
+            storageBucket: "final-assignment-b0710.appspot.com",
+            messagingSenderId: "1096936873748",
+            appId: "1:1096936873748:web:b355891a9ee76144bb6c01",
+            measurementId: "G-QKYY0B77BJ"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="container-inner">
+            <h1 id="heading">Sign Up</h1>
+            <label id="label">First Name :</label>
+
+            <input type="text" placeholder="First Name" name="name" id="Name" />
+            <label id="label">Last Name :</label>
+            <input type="text" placeholder="Last Name" name="name" id="LastName" />
+            <label id="label">Mobile Number</label>
+
+            <input type="number" placeholder="Mobile Number" name="number" id="mobileNo" />
+            <label id="label">Email Address :</label>
+
+            <input type="email" placeholder="Email Address" name="email" id="email" />
+            <label id="label">Password :</label>
+            <input type="password" placeholder="Password" name="Password" id="password" />
+            <label id="label">Re-Enter Password :</label>
+            <input type="password" placeholder="Re-Enter Password" name="password" id="re_enter_password" />
+            <p id="message"></p>
+            <button onclick="SignUp()">Sign Up</button>
+            <p id="signup">
+                Already have an account?
+                <a id="signup-1" href="./log-in.html"> Log In</a>
+            </p>
+        </div>
+        <a href="./email-ver.html"></a>
+    </div>
+</body>
+<script src="./../javascript/sign-up.js"></script>
+
+</html>

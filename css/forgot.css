@@ -1,0 +1,444 @@
+* {
+  padding: 0%;
+  margin: 0%;
+
+  font-family: Poppins;
+}
+body {
+  background-color: var(--scondery);
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 380.156px;
+  width: 580px;
+  background-color: var(--third);
+  box-shadow: var(--fiveth);
+  margin-top: 120px;
+  border-radius: 10px;
+}
+#heading {
+  text-align: center;
+  background-color: var(--third);
+  /* font-family: Poppins bold; */
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#label {
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 60px;
+  background-color: var(--third);
+}
+#label-1 {
+  padding-bottom: 26px;
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 60px;
+  background-color: var(--third);
+  text-align: justify;
+  padding-right: 40px;
+}
+#message {
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 60px;
+  background-color: var(--third);
+  padding-bottom: 10px;
+}
+#container-inner input {
+  width: 460px;
+  height: 42px;
+  background-color: var(--third);
+  margin-bottom: 20px;
+  margin-top: 8px;
+  border: 2px solid var(--scondery);
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+button {
+  background-color: var(--primary);
+  width: 480px;
+  height: 42px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: var(--third);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#backLogin {
+  background-color: var(--third);
+  text-decoration: none;
+  color: var(--primary);
+  padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  #container-inner {
+    height: 380.156px;
+    width: 43.5%;
+  }
+  #container-inner input {
+    width: 435px;
+    height: 42px;
+  }
+  button {
+    width: 450px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 50px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 50px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #container-inner {
+    height: 380.156px;
+    width: 50.5%;
+  }
+  #container-inner input {
+    width: 447px;
+    height: 42px;
+  }
+  button {
+    width: 458px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 50px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 50px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #container-inner {
+    height: 380.156px;
+    width: 57.5%;
+  }
+  #container-inner input {
+    width: 500px;
+    height: 42px;
+  }
+  button {
+    width: 510px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #container-inner {
+    height: 380.156px;
+    width: 57.5%;
+  }
+  #container-inner input {
+    width: 450px;
+    height: 42px;
+  }
+  button {
+    width: 475px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #container-inner {
+    height: 380.156px;
+    width: 57.5%;
+  }
+  #container-inner input {
+    width: 400px;
+    height: 42px;
+  }
+  button {
+    width: 420px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #container-inner {
+    height: 380.156px;
+    width: 57.5%;
+  }
+  #container-inner input {
+    width: 350px;
+    height: 42px;
+  }
+  button {
+    width: 370px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #container-inner {
+    height: 380.156px;
+    width: 77.5%;
+  }
+  #container-inner input {
+    width: 430px;
+    height: 42px;
+  }
+  button {
+    width: 450px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #container-inner {
+    height: 380.156px;
+    width: 77.5%;
+  }
+  #container-inner input {
+    width: 400px;
+    height: 42px;
+  }
+  button {
+    width: 420px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #container-inner {
+    height: 400.156px;
+    width: 98.5%;
+  }
+  #container-inner input {
+    width: 450px;
+    height: 42px;
+  }
+  button {
+    width: 468px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #container-inner {
+    height: 400.156px;
+    width: 98.5%;
+  }
+  #container-inner input {
+    width: 430px;
+    height: 42px;
+  }
+  button {
+    width: 450px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #container-inner {
+    height: 420.156px;
+    width: 98%;
+  }
+  #container-inner input {
+    width: 350px;
+    height: 42px;
+  }
+  button {
+    width: 370px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 40px;
+  }
+  #message {
+    margin-left: 40px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #container-inner {
+    height: 420.156px;
+    width: 98%;
+  }
+  #container-inner input {
+    width: 320px;
+    height: 42px;
+  }
+  button {
+    width: 335px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 40px;
+  }
+  #message {
+    margin-left: 40px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #container-inner {
+    height: 420.156px;
+    width: 98%;
+  }
+  #container-inner input {
+    width: 290px;
+    height: 42px;
+  }
+  button {
+    width: 300px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 250px) {
+  #container-inner {
+    height: 480.156px;
+    width: 98%;
+    margin-bottom: 50px;
+  }
+  #container-inner input {
+    width: 200px;
+    height: 42px;
+  }
+  button {
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}

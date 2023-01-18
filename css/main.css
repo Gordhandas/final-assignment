@@ -1,0 +1,23 @@
+:root {
+  --primary: #3360f8;
+  --scondery: #f0f2f5;
+  --third: white;
+  --fourth: black;
+  --fiveth: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --sixth: gray;
+  --seventh: red;
+  --eighth: rgba(0, 0, 0, 0.3);
+  --ninth: #f5f5f5;
+  /* 
+	--tenth: ;
+	--eleventh:;
+	--twelfth:;
+	--thirteenth:;
+	--fourteenth:;
+	--fifteenth:;
+	--sixteenth:;
+	--seventeenth:;
+	--eighteenth:;
+	--nineteenth:;
+	--twentieth:; */
+}

@@ -1,0 +1,427 @@
+* {
+  padding: 0%;
+  margin: 0%;
+
+  font-family: Poppins;
+}
+body {
+  background-color: var(--scondery);
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 410.156px;
+  width: 580px;
+  background-color: var(--third);
+  box-shadow: var(--fiveth);
+  margin-top: 120px;
+  border-radius: 10px;
+}
+#image {
+  height: 120px;
+  width: 125px;
+  background-color: var(--third);
+}
+#verify {
+  font-size: 25px;
+  padding: 10px;
+  background-color: var(--third);
+}
+#para-1 {
+  background-color: var(--third);
+  text-align: center;
+}
+#email {
+  color: var(--primary);
+  font-weight: 600;
+  background-color: var(--third);
+  text-align: center;
+}
+#para-2 {
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: var(--third);
+  text-align: center;
+}
+#span-2 {
+  color: var(--fourth);
+  font-weight: 600;
+  background-color: var(--third);
+  text-align: center;
+}
+#message {
+  text-align: left;
+  align-self: flex-start;
+  margin-left: 30px;
+  background-color: var(--third);
+  padding-bottom: 10px;
+}
+#button {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: var(--third);
+}
+#button button {
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  color: var(--third);
+  font-size: 16px;
+  border-radius: 7px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  #container-inner {
+    height: 410.156px;
+    width: 48.5%;
+    margin-top: 330px;
+  }
+
+  #button button {
+    width: 250px;
+    height: 40px;
+  }
+  #label {
+    margin-left: 50px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #container-inner {
+    height: 410.156px;
+    width: 50.5%;
+  }
+  #container-inner input {
+    width: 447px;
+    height: 42px;
+  }
+  button {
+    width: 458px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 50px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+  #forgot {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #container-inner {
+    height: 410.156px;
+    width: 57.5%;
+    margin-top: 230px;
+  }
+  #container-inner input {
+    width: 500px;
+    height: 42px;
+  }
+  button {
+    width: 510px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #container-inner {
+    height: 410.156px;
+    width: 60.5%;
+  }
+  #container-inner input {
+    width: 450px;
+    height: 42px;
+  }
+  #button {
+    width: 490px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #container-inner {
+    height: 410.156px;
+    width: 60.5%;
+    margin-top: 200px;
+  }
+  #container-inner input {
+    width: 400px;
+    height: 42px;
+  }
+  #button {
+    width: 410px;
+    height: 42px;
+  }
+  #button button {
+    width: 320px;
+    height: 42px;
+  }
+
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #container-inner {
+    height: 410.156px;
+    width: 67.5%;
+    margin-top: 140px;
+  }
+  #container-inner input {
+    width: 350px;
+    height: 42px;
+  }
+  button {
+    width: 370px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #container-inner {
+    height: 410.156px;
+    width: 77.5%;
+    margin-top: 100px;
+  }
+  #container-inner input {
+    width: 430px;
+    height: 42px;
+  }
+  button {
+    width: 450px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #container-inner {
+    height: 410.156px;
+    width: 80.5%;
+  }
+  #container-inner input {
+    width: 400px;
+    height: 42px;
+  }
+  button {
+    width: 420px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #label-1 {
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #container-inner {
+    height: 400.156px;
+    width: 90.5%;
+    margin-top: 80px;
+  }
+  #container-inner input {
+    width: 450px;
+    height: 42px;
+  }
+  #button {
+    width: 430px;
+  }
+  #button button {
+    width: 468px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #container-inner {
+    height: 400.156px;
+    width: 98.5%;
+  }
+  #container-inner input {
+    width: 430px;
+    height: 42px;
+  }
+  button {
+    width: 450px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #container-inner {
+    height: 400.156px;
+    width: 98%;
+  }
+  #container-inner input {
+    width: 350px;
+    height: 42px;
+  }
+
+  #button {
+    width: 370px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 40px;
+  }
+  #message {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #container-inner {
+    height: 420.156px;
+    width: 98%;
+  }
+  #container-inner input {
+    width: 320px;
+    height: 42px;
+  }
+  #para-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  #button {
+    width: 335px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 40px;
+  }
+  #message {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #container-inner {
+    height: 420.156px;
+    width: 98%;
+  }
+  #container-inner input {
+    width: 290px;
+    height: 42px;
+  }
+  #button {
+    width: 275px;
+    height: 42px;
+  }
+  #label {
+    margin-left: 30px;
+  }
+  #message {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 250px) {
+  #container-inner {
+    height: 530.156px;
+    width: 98%;
+    margin-bottom: 50px;
+  }
+  #container-inner input {
+    width: 200px;
+    height: 42px;
+  }
+  #button {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+  #button button {
+    width: 80px;
+    height: 200px;
+  }
+  #verify {
+    text-align: center;
+  }
+  #message {
+    margin-left: 30px;
+    text-align: center;
+  }
+}

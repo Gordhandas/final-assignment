@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./../css/main.css" />
+  <link rel="stylesheet" href="./../css/profile.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3f48adb1c4.js" crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCSX1gwP7slDkEOI0DFhgvKg-n8UwM5s3k",
+      authDomain: "final-assignment-b0710.firebaseapp.com",
+      projectId: "final-assignment-b0710",
+      storageBucket: "final-assignment-b0710.appspot.com",
+      messagingSenderId: "1096936873748",
+      appId: "1:1096936873748:web:b355891a9ee76144bb6c01",
+      measurementId: "G-QKYY0B77BJ",
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+
+<body>
+  <div id="container" class="container-fluid" class="row">
+    <div id="container-inner-1">
+      <a href="./home.html"><i class="fa-solid fa-house"></i></a>
+      <a href="./groups.html"><i class="fa-solid fa-users"></i></a>
+      <a href="./videos.html"><i class="fa-solid fa-video"></i></a>
+      <a href="./createpost.html"><i class="fa-solid fa-circle-plus"></i></a>
+      <a href="#"><i class="fa-solid fa-user-large"></i></a>
+      <a href="./log-in.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+      <!-- <a href=""onclick="LogOut()"></a> -->
+    </div>
+    <div id="container-inner">
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9eAY9D_ubKZBXbqIwpN5nxIPCGnf8PVWJAbm-6jiW-A&s"
+          id="profileImage" />
+        <input type="file" id="upload" hidden onchange="UploadProfile(event)"
+          accept="image/png, image/jpg, image/jpeg" />
+        <label for="upload" id="upload-1"><img height="40px" width="40px" id="upload-2"
+            src="./../assets/icon/upload.png" alt="" /></label>
+      </div>
+
+      <div id="proImage">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" id="Profile" />
+
+        <input type="file" id="uploaded" hidden accept="image/png, image/jpg, image/jpeg"
+          onchange="ImageProfile(event)" />
+        <label for="uploaded" id="upload-3"><img height="30px" width="30px" id="upload-4"
+            src="./../assets/icon/upload.png" alt="" /></label>
+      </div>
+      <br />
+      <div id="barDiv">
+        <div id="myProgress">
+          <div id="myBar"></div>
+        </div>
+
+        <div id="container-inner-2">
+          <img class="icon-1" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="" height="50px"
+            width="50px" />
+          <input class="input" type="text" placeholder="What's on your mind, Gordhan Das?" disabled />
+        </div>
+      </div>
+
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            Profile
+          </button>
+        </li>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+            Posts
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active Scorll" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <label id="label">First Name :</label>
+
+          <input type="text" placeholder="First Name" name="name" id="Name" />
+          <label id="label">Last Name :</label>
+          <input type="text" placeholder="Last Name" name="name" id="LastName" />
+          <label id="label">Mobile Number</label>
+
+          <input type="number" placeholder="Mobile Number" name="number" id="mobileNo" />
+          <label id="label">Email Address :</label>
+
+          <input type="email" placeholder="Email Address" name="email" id="email" disabled />
+          <label id="label">Description :</label>
+
+          <textarea name="" id="textarea" cols="30" rows="10" placeholder="Description (Optional)"></textarea>
+          <p id="message"></p>
+          <div id="UpdateDiv">
+            <button id="Update" onclick="Update()">Update</button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          . Harkhani Harkhani Harkhani..
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./../javascript/logout.js"></script>
+<script src="./../javascript/profile.js"></script>
+
+</html>
